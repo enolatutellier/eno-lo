@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 1000px)"
+            href="media-querries/media-1000max.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 770px)"
+            href="media-querries/media-770max.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 520px)"
+            href="media-querries/media-520max.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/280516d329.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <title>Enolo</title>
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+
+                    <li>
+                        <a href="page1.html">Hôtels</a>
+                    </li>
+
+                    <li>
+                        <a href="page2.html">Activités</a>
+                    </li>
+
+                    <li>
+                        <a href="page3.html">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <img src="images/logoblanc.png" alt="Logo Enolo" />
+            </div>
+
+            <div id="search">
+                <label for="arrivaldate"><span>D</span>ate d'arrivé:</label>
+                <input type="date" name="arrivaldate" />
+
+                <label for="departuredate"><span>D</span>ate de départ:</label>
+                <input type="date" name="arrivaldate" />
+
+                <label for="adultes"><span>N</span>ombre d'adultes:</label>
+                <input type="number" name="adultes" />
+
+                <label for="enfants"><span>N</span>ombre d'enfants:</label>
+                <input type="number" name="enfants" />
+
+                <label for="destination"><span>D</span>estination:</label>
+                <input type="search" name="destination" />
+            </div>
+
+            <form method="post" action="traitement.php">
+                <div id="search2">
+                    <label for="marseille" id="gps"
+                        ><i class="fas fa-map-marker-alt"></i
+                    ></label>
+                    <input
+                        id="marseille"
+                        type="text"
+                        name="lieu"
+                        size="28"
+                        placeholder="Marseille, France"
+                    />
+                    <input
+                        id="departuredate"
+                        type="date"
+                        name="DateDeDepart"
+                        size="28"
+                    />
+
+                    <div class="relative">
+                        <input
+                            id="nbofadult"
+                            type="number"
+                            name="NombreAdultes"
+                            size="28"
+                            placeholder="0"
+                        />
+                        <i class="fa-solid fa-user absolute adult"></i>
+                    </div>
+
+                    <div class="relative">
+                        <input
+                            id="nbofchild"
+                            type="number"
+                            name="NombreEnfants"
+                            size="28"
+                            placeholder="0"
+                        />
+                        <i class="fa-solid fa-child absolute bas"></i>
+                    </div>
+
+                    <button class="search-btn">
+                        <i class="fa fa-search search-btn-i"></i
+                        ><span>Rechercher</span>
+                    </button>
+                </div>
+            </form>
+        </header>
+
+        <section class="section1">
+            <h2>
+                Une Startup en pleine évolution vers la nouvelle technologie.
+            </h2>
+            <h3>Vous partez en vacances ? On s'occupe de tout !</h3>
+
+            <div class="pic1">
+                <p>
+                    <strong>Mes Vacances à Bora-Bora</strong><br />Lorem ipsum
+                    dolor sit amet. Et dolor magnam sed vero quia qui galisum
+                    officiis id iure nihil a consequuntur autem. Aut aliquam
+                    nihil 33 fugit vero in deserunt labore aut aliquid repellat
+                    et fugiat sint et quasi facilis. Non earum magnam aut quod
+                    reiciendis aut quaerat quas nam aliquid sunt et sequi
+                    quaerat ex libero nesciunt.
+                </p>
+
+                <img
+                    src="images/dora_bora.jpg"
+                    alt="Un bungalow sur pilloti à bora bora"
+                />
+            </div>
+
+            <div class="pic1">
+                <p>
+                    <strong>Mes Vacances à Maldive</strong><br />Lorem ipsum
+                    dolor sit amet. Et dolor magnam sed vero quia qui galisum
+                    officiis id iure nihil a consequuntur autem. Aut aliquam
+                    nihil 33 fugit vero in deserunt labore aut aliquid repellat
+                    et fugiat sint et quasi facilis. Non earum magnam aut quod
+                    reiciendis aut quaerat quas nam aliquid sunt et sequi
+                    quaerat ex libero nesciunt.
+                </p>
+
+                <img
+                    src="images/thailande.jpg"
+                    alt="Un bungalow sur pilloti à bora bora"
+                />
+            </div>
+
+            <div class="pic1">
+                <p>
+                    <strong>Mes Vacances à Tahïti</strong><br />Lorem ipsum
+                    dolor sit amet. Et dolor magnam sed vero quia qui galisum
+                    officiis id iure nihil a consequuntur autem. Aut aliquam
+                    nihil 33 fugit vero in deserunt labore aut aliquid repellat
+                    et fugiat sint et quasi facilis. Non earum magnam aut quod
+                    reiciendis aut quaerat quas nam aliquid sunt et sequi
+                    quaerat ex libero nesciunt.
+                </p>
+
+                <img
+                    src="images/plagebleu.jpg"
+                    alt="Un bungalow sur pilloti à bora bora"
+                />
+            </div>
+        </section>
+
+        <section class="section2">
+            <article></article>
+
+            <article></article>
+        </section>
+
+        <footer id="foot">
+            <div class="Presentation">
+                <div class="logo">
+                    <img src="images/logoblanc.png" alt="Logo Enolo" />
+                </div>
+                <h3>Vos vacances simplifiées</h3>
+            </div>
+
+            <div class="Newsletter">
+                <h5>Abonnez vous à nos actualités</h5>
+                <label for="newsletter">Votre email:</label>
+                <input type="mail" name="newsletter" />
+            </div>
+
+            <div class="AssistFollow">
+                <div class="Assist">
+                    <h5>Assistance</h5>
+                    <a href="#">FAQ</a>
+                    <a href="#">Nous contacter</a>
+                    <a href="#">Service client</a>
+                </div>
+
+                <div class="Follow">
+                    <h5>Follow US</h5>
+
+                    <a href="#">
+                        <img src="images/facebook.png" alt="Logo Facebook" />
+                    </a>
+
+                    <a href="#">
+                        <img src="images/instagram.png" alt="Logo Instagram" />
+                    </a>
+
+                    <a href="#">
+                        <img src="images/twitter.png" alt="Logo Twitter" />
+                    </a>
+                </div>
+            </div>
+            <p>Tous droits réservés @Enolo - 2022</p>
+        </footer>
+    </body>
+</html>

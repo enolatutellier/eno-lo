@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Enolo - Page2</title>
+        <link rel="stylesheet" href="page3.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 1000px)"
+            href="media-querries/media-1000max.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 770px)"
+            href="media-querries/media-770max.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 520px)"
+            href="media-querries/media-520max.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/280516d329.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Acceuil</a>
+                    </li>
+
+                    <li>
+                        <a href="page1.html">Hôtels</a>
+                    </li>
+
+                    <li>
+                        <a href="page2.html">Activités</a>
+                    </li>
+
+                    <li>
+                        <a href="page3.html">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <img src="images/logoblanc.png" alt="Logo Enolo" />
+            </div>
+
+            <div id="search">
+                <label for="arrivaldate"><span>D</span>ate d'arrivé:</label>
+                <input type="date" name="arrivaldate" />
+
+                <label for="departuredate"><span>D</span>ate de départ:</label>
+                <input type="date" name="arrivaldate" />
+
+                <label for="adultes"><span>N</span>ombre d'adultes:</label>
+                <input type="number" name="adultes" />
+
+                <label for="enfants"><span>N</span>ombre d'enfants:</label>
+                <input type="number" name="enfants" />
+
+                <label for="destination"><span>D</span>estination:</label>
+                <input type="search" name="destination" />
+            </div>
+
+            <form method="post" action="traitement.php">
+                <div id="search2">
+                    <label for="marseille" id="gps"
+                        ><i class="fas fa-map-marker-alt"></i
+                    ></label>
+                    <input
+                        id="marseille"
+                        type="text"
+                        name="lieu"
+                        size="28"
+                        placeholder="Marseille, France"
+                    />
+                    <input
+                        id="departuredate"
+                        type="date"
+                        name="DateDeDepart"
+                        size="28"
+                    />
+
+                    <div class="relative">
+                        <input
+                            id="nbofadult"
+                            type="number"
+                            name="NombreAdultes"
+                            size="28"
+                            placeholder="0"
+                        />
+                        <i class="fa-solid fa-user absolute adult"></i>
+                    </div>
+
+                    <div class="relative">
+                        <input
+                            id="nbofchild"
+                            type="number"
+                            name="NombreEnfants"
+                            size="28"
+                            placeholder="0"
+                        />
+                        <i class="fa-solid fa-child absolute bas"></i>
+                    </div>
+
+                    <button class="search-btn">
+                        <i class="fa fa-search search-btn-i"></i
+                        ><span>Rechercher</span>
+                    </button>
+                </div>
+            </form>
+        </header>
+
+        <section class="formulaire">
+            <form method="post" action="form.php">
+                <h3>S'inscrire</h3>
+
+                <div class="champ div3">
+                    <label for="mail"><span>M</span>ail :</label>
+                    <input type="text" id="mail" name="mail" />
+                </div>
+
+                <div class="champ div2">
+                    <label for="pass"><span>M</span>ot de passe :</label>
+                    <input type="password" id="pass" name="pass" />
+                </div>
+
+                <div class="champ div1">
+                    <label for="phone"><span>T</span>elephone : </label>
+                    <input type="tel" id="tel" name="telephone" />
+                </div>
+
+                <div class="champ div4">
+                    <label for="dest"
+                        ><span>D</span>estination favorite :</label
+                    >
+                    <input type="text" id="dest" name="dest" />
+                </div>
+
+                <div class="champ div5">
+                    <label for="message"><span>M</span>essage :</label>
+                    <input type="message" id="message" name="message" />
+                </div>
+
+                <div class="envoi div6">
+                    <input type="submit" id="envoi" value="Envoyer" />
+                </div>
+            </form>
+        </section>
+
+        <footer id="foot">
+            <div class="Presentation">
+                <div class="logo">
+                    <img src="images/logoblanc.png" alt="Logo Enolo" />
+                </div>
+                <h3>Vos vacances simplifiées</h3>
+            </div>
+
+            <div class="Newsletter">
+                <h5>Abonnez vous à nos actualités</h5>
+                <label for="newsletter">Votre email:</label>
+                <input type="mail" name="newsletter" />
+            </div>
+
+            <div class="AssistFollow">
+                <div class="Assist">
+                    <h5>Assistance</h5>
+                    <a href="#">FAQ</a>
+                    <a href="#">Nous contacter</a>
+                    <a href="#">Service client</a>
+                </div>
+
+                <div class="Follow">
+                    <h5>Follow US</h5>
+
+                    <a href="#">
+                        <img src="images/facebook.png" alt="Logo Facebook" />
+                    </a>
+
+                    <a href="#">
+                        <img src="images/instagram.png" alt="Logo Instagram" />
+                    </a>
+
+                    <a href="#">
+                        <img src="images/twitter.png" alt="Logo Twitter" />
+                    </a>
+                </div>
+            </div>
+            <p>Tous droits réservés @Enolo - 2022</p>
+        </footer>
+    </body>
+</html>

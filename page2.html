@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Enolo - Page2</title>
+        <link rel="stylesheet" href="page2.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 1000px)"
+            href="media-querries/media-1000max.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 770px)"
+            href="media-querries/media-770max.css"
+        />
+        <link
+            rel="stylesheet"
+            media="screen and (max-width: 520px)"
+            href="media-querries/media-520max.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/280516d329.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Acceuil</a>
+                    </li>
+
+                    <li>
+                        <a href="page1.html">Hôtels</a>
+                    </li>
+
+                    <li>
+                        <a href="page2.html">Activités</a>
+                    </li>
+
+                    <li>
+                        <a href="page3.html">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <img src="images/logoblanc.png" alt="Logo Enolo" />
+            </div>
+
+            <div id="search">
+                <label for="arrivaldate"><span>D</span>ate d'arrivé:</label>
+                <input type="date" name="arrivaldate" />
+
+                <label for="departuredate"><span>D</span>ate de départ:</label>
+                <input type="date" name="arrivaldate" />
+
+                <label for="adultes"><span>N</span>ombre d'adultes:</label>
+                <input type="number" name="adultes" />
+
+                <label for="enfants"><span>N</span>ombre d'enfants:</label>
+                <input type="number" name="enfants" />
+
+                <label for="destination"><span>D</span>éstination:</label>
+                <input type="search" name="destination" />
+            </div>
+
+            <form method="post" action="traitement.php">
+                <div id="search2">
+                    <label for="marseille" id="gps"
+                        ><i class="fas fa-map-marker-alt"></i
+                    ></label>
+                    <input
+                        id="marseille"
+                        type="text"
+                        name="lieu"
+                        size="28"
+                        placeholder="Marseille, France"
+                    />
+                    <input
+                        id="departuredate"
+                        type="date"
+                        name="DateDeDepart"
+                        size="28"
+                    />
+
+                    <div class="relative">
+                        <input
+                            id="nbofadult"
+                            type="number"
+                            name="NombreAdultes"
+                            size="28"
+                            placeholder="0"
+                        />
+                        <i class="fa-solid fa-user absolute adult"></i>
+                    </div>
+
+                    <div class="relative">
+                        <input
+                            id="nbofchild"
+                            type="number"
+                            name="NombreEnfants"
+                            size="28"
+                            placeholder="0"
+                        />
+                        <i class="fa-solid fa-child absolute bas"></i>
+                    </div>
+
+                    <button class="search-btn">
+                        <i class="fa fa-search search-btn-i"></i
+                        ><span>Rechercher</span>
+                    </button>
+                </div>
+            </form>
+        </header>
+
+        <section class="section1act height">
+            <h4>Plongée</h4>
+
+            <div class="sectionflex">
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos_txt1"
+                    class="videos"
+                    style="display: none"
+                >
+                    <source src="videos/Sipadan.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos_txt2"
+                    class="videos"
+                    style="display: none"
+                >
+                    <source src="videos/Raja Ampat.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos_txt3"
+                    class="videos"
+                    style="display: none"
+                >
+                    <source src="videos/Polynesie.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos_txt4"
+                    class="videos"
+                    style="display: none"
+                >
+                    <source src="videos/Maldives.mp4" type="video/mp4" />
+                </video>
+
+                <span id="span_txt1" class="plongée" style="display: none"
+                    >Sipadan est une petite île luxuriante au nord-est au large
+                    de la partie malaise de Bornéo.<br />
+                    Elle est “très bien protégée”. Un quota strict limite le
+                    nombre de plongeurs autorisés par jour.<br /><br />
+                    On ne peut pas y dormir et les militaires veillent à ce que
+                    les touristes qui débarquent ne s’aventurent pas au-delà de
+                    la limite autorisée.<br /><br />
+                    Ces mesures assurent une préservation exceptionnelle du
+                    lieu, aussi bien sur terre que sous l’eau.</span
+                >
+
+                <span id="span_txt2" class="plongée" style="display: none"
+                    >Raja Ampat est un archipel de près de 1500 îles,
+                    généralement montagneuses, qui se situe en Indonésie à
+                    l’ouest de la Papouasie occidentale.<br />
+
+                    Il est au centre du “Triangle de Corail” considéré comme la
+                    zone la plus riche en biodiversité marine au monde.<br /><br />
+
+                    Les îles de Raja Ampat sont très peu habitées et très peu
+                    touristiques.<br />
+                    Il s’y dégage un véritable parfum de bout de monde sauvage
+                    et luxuriant.<br /><br />
+                    Les sites de plongée sont très nombreux et tous
+                    exceptionnels, la faune marine y est très abondante et le
+                    corail parfaitement préservé est d’une variété
+                    inégalée.</span
+                >
+                <span id="span_txt3" class="plongée" style="display: none"
+                    >Rangiroa est un atoll corallien de l’archipel des
+                    Tuamotu-Gambier en Polynésie française qui fait partie du
+                    groupement des Îles Palliser.<br />
+
+                    Rangira est le deuxième plus grand atoll du monde.<br /><br />
+                    La vie marine y est exceptionnellement dense.<br />
+                    On peut en particulier y plonger avec des dauphins,
+                    d’innombrables requins dont le marteau et le tigre.<br /><br />
+                    Le courant y est fort par endroit, ce qui permet d’admirer
+                    les fonds sous-marins comme sur un tapis roulant.</span
+                >
+                <span id="span_txt4" class="plongée" style="display: none"
+                    >Les Maldives sont un pays tropical formé d’innombrables
+                    îles bordées de plages paradisiaques et de 26 atolls
+                    coralliens.<br />
+                    Les eaux territoriales sont largement protégées et ça se
+                    voit.<br /><br />
+                    La vie marine y est extrêmement dense.<br />
+
+                    On y croise facilement, entre autres, des raies aigles, des
+                    bancs de poissons napoléon, des barracudas, de nombreuses
+                    raies mantas et même assez souvent le très rare
+                    requin-baleine.<br /><br />
+                    Si le budget le permet, l’idéal pour profiter à fond de la
+                    plongée est de monter quelques jours sur un bateau
+                    “liveaboard” pour atteindre les tout meilleurs spots souvent
+                    plus éloignés des zones habitées.</span
+                >
+
+                <aside>
+                    <ul>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton_txt1"
+                                onclick="toggle_text1(event)"
+                            >
+                                SIPADAN, MALAISIE - 350€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton_txt2"
+                                onclick="toggle_text1(event)"
+                            >
+                                RAJA AMPAT, INDONÉSIE - 300€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton_txt3"
+                                onclick="toggle_text1(event)"
+                            >
+                                RANGIROA, POLYNÉSIE FRANÇAISE - 200€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton_txt4"
+                                onclick="toggle_text1(event)"
+                            >
+                                MALDIVES - 300€
+                            </button>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section2act height">
+            <h4>Croisière</h4>
+            <div class="sectionflex">
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos2_txt1"
+                    class="videos2"
+                    style="display: none"
+                >
+                    <source src="videos/Corse.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos2_txt2"
+                    class="videos2"
+                    style="display: none"
+                >
+                    <source src="videos/Galapagos.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos2_txt3"
+                    class="videos2"
+                    style="display: none"
+                >
+                    <source src="videos/Britanniques.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos2_txt4"
+                    class="videos2"
+                    style="display: none"
+                >
+                    <source src="videos/Tahiti.mp4" type="video/mp4" />
+                </video>
+
+                <span id="span2_txt1" class="croisière" style="display: none"
+                    >Découvrez de somptueux paysages de carte postale, entre
+                    mer, maquis et montagnes.<br />
+                    L'île de beauté regorge de plages paradisiaques et de
+                    charmants petits villages authentiques.<br /><br />
+                    Baignées de soleil, les escales d'une croisière en Corse
+                    satisferont toutes vos attentes en matière de vacances d'été
+                    réussies.<br />
+                    Visitez entre autres la capitale, Ajaccio, mais aussi les
+                    charmantes villes de Bonifacio et Calvi.</span
+                >
+
+                <span id="span2_txt2" class="croisière" style="display: none"
+                    >Une croisière aux Galapagos est une expérience unique.<br />
+                    Les îles Galapagos attirent par leur côté mystique et
+                    sauvage, et le meilleur moyen d’en admirer toutes les
+                    facettes reste la croisière, qu’il s’agisse d’une croisière
+                    de luxe ou d’une croisière plongée.<br /><br />
+                    Ici, Le décor à couper le souffler, la faune et la flore
+                    extrêmement riches,<br />
+                    l’homme doit s'accorder à la nature, et non l’inverse.</span
+                >
+                <span id="span2_txt3" class="croisière" style="display: none"
+                    >Les îles Vierges Britanniques sont l'un des meilleurs
+                    archipels au monde pour une croisière en voilier :<br />
+                    la navigation y est agréable, parmi une soixantaine d'îles
+                    pour la plupart inhabitées mais plus paradisiaques les unes
+                    que les autres.<br /><br />
+                    Il est vrai qu'aux îles Vierges Britanniques, on rêve
+                    parfois d?avoir enfin découvert le paradis terrestre.<br />
+                    Est-ce dû à cette myriade d'îlets magiques, ourlés de sable
+                    blanc et de cocotiers, entre lesquels se faufile doucement
+                    votre bateau ?<br /><br />
+                    Dans le sillage des pirates des Caraïbes, le capitaine de
+                    votre catamaran vous fera découvrir les plus beaux
+                    mouillages de l'archipel.</span
+                >
+                <span id="span2_txt4" class="croisière" style="display: none"
+                    >Partez pour des destinations exotiques en naviguant d'île
+                    en île lors des croisières Polynésie.<br />
+                    Découvrez les cinq archipels de la Polynésie française et
+                    Tahiti, la plus grande et la plus peuplée des îles
+                    polynésiennes.<br /><br />
+                    Les îles de la Polynésie sont particulièrement prisées pour
+                    les voyages de noces par exemple.<br />
+                    Au sein de cet archipel, Bora Bora figure comme un lieu
+                    incontournable à visiter pour admirer son lagon, réputé
+                    comme étant le plus beau au Monde.</span
+                >
+
+                <aside>
+                    <ul>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton2_txt1"
+                                onclick="toggle_text2(event)"
+                            >
+                                Corse - 850€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton2_txt2"
+                                onclick="toggle_text2(event)"
+                            >
+                                Galapagos - 1500€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton2_txt3"
+                                onclick="toggle_text2(event)"
+                            >
+                                Îles Vierges Britanniques - 600€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton2_txt4"
+                                onclick="toggle_text2(event)"
+                            >
+                                Tahiti - 1200€
+                            </button>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Activité Nautique-->
+
+        <section class="section3act height">
+            <h4>Activité Nautique</h4>
+            <div class="sectionflex">
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos3_txt1"
+                    class="videos3"
+                    style="display: none"
+                >
+                    <source src="videos/jetski.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos3_txt2"
+                    class="videos3"
+                    style="display: none"
+                >
+                    <source src="videos/surf.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos3_txt3"
+                    class="videos3"
+                    style="display: none"
+                >
+                    <source src="videos/bateauavoile.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    mute
+                    id="videos3_txt4"
+                    class="videos3"
+                    style="display: none"
+                >
+                    <source src="videos/paddle.mp4" type="video/mp4" />
+                </video>
+
+                <!-- texte jet-ski-->
+
+                <span id="span3_txt1" class="nautique"
+                    >Goûtez aux plaisirs de la vitesse sur de splendides
+                    parcours !<br />
+                    Réservez votre randonnée en jet ski, et partez faire une
+                    balade en scooter des mers.<br />
+                    Sur plan d'eau ou en mer, la sortie en jetski est idéale
+                    pour faire le plein de sensations. <br />
+                    Offrez ou faites vous offrir une rando jet ski pour un
+                    plaisir maximum, notre offre comprend la location du scooter
+                    des mers et l'accompagnement par un professionnel.</span
+                >
+                <!--Texte Surf-->
+
+                <span id="span3_txt2" class="nautique" style="display: none"
+                    >La Destination glisse par excellence pour des vacances,<br />
+                    un court séjour ou un week-end.<br />
+                    Tout est fait pour apprendre à surfer avec les meilleures
+                    écoles de surf et sur les spots les plus connus.<br />
+                    Du cours d’initiation au perfectionnement découvrez cette
+                    activité en toute sécurité et professionnalisme.</span
+                >
+                <!--Texte Bateau à Voiles-->
+
+                <span id="span3_txt3" class="nautique" style="display: none"
+                    >Voyagez en bateau à moteur ou en voilier, passez du temps à
+                    visiter des sites extraordinaires ou faites un baptême de
+                    sensation, sur la mer, la rivière ou l'océan, vous pouvez
+                    choisir le bleu qui vous ressemble. Alors récompensez-vous
+                    ou offrez-vous cette activité conviviale qui, plus que toute
+                    autre, profite de la joie et de l'émotion que l'eau a à
+                    offrir. Ouverte à tous, la balade en bateau vous permettra
+                    de passer un vrai moment en famille ou entre amis.</span
+                >
+                <!--Texte Paddle-->
+
+                <span id="span3_txt4" class="nautique" style="display: none">
+                    Votre planche de Paddle et votre pagaie vous seront remis à
+                    votre arrivée.<br />
+                    Vous vous lancerez ensuite sur les eaux cristallines de la
+                    mer et tenterez de garder l’équilibre et avancer le long de
+                    la côte.<br />
+                    Votre animateur vous aidera à vous tenir sur la planche et
+                    vous donnera quelques astuces.<br />
+                    Pendant votre balade en Paddle, vous pourrez admirer la
+                    beauté de la plage et la vue sur la ville.<br />
+                    Que vous soyez débutant ou expérimenté, cette activité
+                    conviviale est idéale pour retrouver les sensations d’un
+                    sport de glisse et pour vous détendre.<br />
+                    Vous pouvez faire une partie de l’activité assis ou debout
+                    sur la planche, selon votre niveau d’aisance.
+                </span>
+
+                <aside>
+                    <ul>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton3_txt1"
+                                onclick="toggle_text3(event)"
+                            >
+                                Jet-ski - 75€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton3_txt2"
+                                onclick="toggle_text3(event)"
+                            >
+                                Surf - 30€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton3_txt3"
+                                onclick="toggle_text3(event)"
+                            >
+                                Bâteau à voile - 65€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton3_txt4"
+                                onclick="toggle_text3(event)"
+                            >
+                                Paddle - 25€
+                            </button>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!--Randonnée -->
+
+        <section class="section4act height">
+            <h4>Randonnée</h4>
+            <div class="sectionflex">
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos4_txt1"
+                    class="videos4"
+                    style="display: none"
+                >
+                    <source src="videos/randonne1.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos4_txt2"
+                    class="videos4"
+                    style="display: none"
+                >
+                    <source src="videos/randonne2.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos4_txt3"
+                    class="videos4"
+                    style="display: none"
+                >
+                    <source src="videos/randonne3.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    mute
+                    id="videos4_txt4"
+                    class="videos4"
+                    style="display: none"
+                >
+                    <source src="videos/randonne4.mp4" type="video/mp4" />
+                </video>
+
+                <!-- Texte Randonnée aux Maldives-->
+
+                <span id="span4_txt1" class="randonnée"
+                    >Les meilleurs circuits Maldives pour découvrir de manière
+                    authentique le pays Maldives.<br />
+                    Retrouvez tous les voyages outdoor autour de la randonnée.
+                    <br />En combien de jours visiter Maldives ? Que ce soit
+                    pour un voyage de 10 jours aux Maldives ou un circuit de 2
+                    semaines. <br />
+                    Que vous soyez en petit groupe, <br />en autonomie avec un
+                    sentiment de liberté totale ou en famille,<br />
+                    partez à l'aventure aux Maldives
+                </span>
+                <!--Texte Randonnée en Indonesie-->
+
+                <span id="span4_txt2" class="randonnée" style="display: none"
+                    >Voici un nouveau parcours atypique proposant le grand tour
+                    de Bali d'est en ouest.<br />
+                    A pied, nous irons à la découverte des chemins de randonnée
+                    encore secrets de l'île. <br />
+                    Rizières en terrasses, forêts profondes, bords de mer
+                    tropicaux, volcans majestueux et villages traditionnels
+                    perdus dans une véritable symphonie de vert !<br />
+                    Comment rester indifférent devant une telle diversité de
+                    paysages ?<br />
+                    Une version dynamique, ouverte à tous, à la rencontre de ces
+                    ambiances traditionnelles<br />
+                    et uniques de l'archipel indonésien.</span
+                >
+                <!--Texte Randonnée en France-->
+
+                <span id="span4_txt3" class="randonnée" style="display: none"
+                    >Le long des rivages méditerranéens Française jalonnés de
+                    criques sauvages et sur les chemins surplombant la mer,<br />
+                    notre itinéraire alterne entre les sentiers de montagne et
+                    les sentiers du littoral. <br />
+                    Au départ du charmant petit port de Collioure,<br />
+                    nous gagnerons les terres viticoles du Banyuls avant de
+                    passer la frontière pour descendre toujours plus au sud,<br />
+                    entre criques et plages, villages blancs et pointes
+                    rocheuses jusqu'à atteindre Cadaqués.
+                </span>
+                <!--Texte Randonnée Malaisie -->
+
+                <span id="span4_txt4" class="randonnée" style="display: none">
+                    Si vous êtes un passionné de la nature, vous ne passerez pas
+                    à côté de l’occasion de faire de la randonnée<br />
+                    durant vos vacances en Malaisie. Dans le cas contraire,<br />
+                    vous raterez l’opportunité de découvrir quelques-unes des
+                    forêts préservées<br />
+                    les plus incroyables au monde et les plus vieilles.<br />
+                    Certaines datant d’il y a 130 millions d’années.
+                </span>
+
+                <aside>
+                    <ul>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton4_txt1"
+                                onclick="toggle_text4(event)"
+                            >
+                                Randonnée aux Maldive
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton4_txt2"
+                                onclick="toggle_text4(event)"
+                            >
+                                Randonnée en Indonésie
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton4_txt3"
+                                onclick="toggle_text4(event)"
+                            >
+                                Randonnée en France
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton4_txt4"
+                                onclick="toggle_text4(event)"
+                            >
+                                Randonnée en Malaisie
+                            </button>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section5act height">
+            <h4>Excursion</h4>
+
+            <div class="sectionflex">
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos5_txt1"
+                    class="videos5"
+                    style="display: none"
+                >
+                    <source src="videos/excursionbuggy.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos5_txt2"
+                    class="videos5"
+                    style="display: none"
+                >
+                    <source src="videos/excursioncheval.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos5_txt3"
+                    class="videos5"
+                    style="display: none"
+                >
+                    <source src="videos/excursionvelo.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    mute
+                    id="videos5_txt4"
+                    class="videos5"
+                    style="display: none"
+                >
+                    <source src="videos/excursionquad.mp4" type="video/mp4" />
+                </video>
+
+                <!-- Texte Excursion Buggy-->
+
+                <span id="span5_txt1" class="excursion"
+                    >Le parcours en buggy continuera vers des grottes
+                    souterraines indigènes...<br />
+                    Vous découvrirez alors l'un des cenotes les plus idylliques
+                    de Punta Cana.<br />
+                    Vous descendrez des véhicules et disposerez d'une demi-heure
+                    pour explorer cette sublime piscine souterraine.<br />
+                    Vous pourrez même nager dans les eaux turquoises</span
+                >
+                <!--Texte Excursion a Cheval-->
+
+                <span id="span5_txt2" class="excursion" style="display: none"
+                    >Cavaliers de tous niveaux, <br />rien de telle qu'une
+                    randonnée à cheval pour renouer avec la nature ! <br />
+                    Avec votre fidèle monture, explorez les plus beaux paysages
+                    et chemins<br />
+                    à travers notre sélection d'itinéraires en dehors des
+                    sentiers battus. De la France à l'Equateur, de la Jordanie à
+                    l'Islande, <br />les randonnées équestres proposées par
+                    notre équipe vous permettent de partir à l'aventure à votre
+                    rythme.</span
+                >
+                <!--Texte Excursion en Velo-->
+
+                <span id="span5_txt3" class="excursion" style="display: none">
+                    Que diriez-vous de vacances à vélo en l'Alsace, 1ère région
+                    cyclable de France,<br />
+                    ou préférez-vous des vacances à vélo en Provence, où vous
+                    pourrez profiter du chant des cigales ?<br />
+                    La Bourgogne ne manquera pas d'attirer nos cyclistes
+                    amateurs de vin, et la Bretagne saura plaire à tout le monde
+                    ! Mais les pistes cyclables le long de la Loire et du Rhône
+                    nous offrent aussi vraiment des vacances à vélo tout ce dont
+                    nous avons besoin pour des vacances inoubliables en France !
+                </span>
+                <!--Texte Excursion en Quad -->
+
+                <span id="span5_txt4" class="excursion" style="display: none">
+                    Montez sur le quad pour une randonnée tout-terrain près
+                    d'Epinal !<br />
+                    Au guidon ou passager de l'engin, <br />vous profitez de la
+                    balade pour découvrir les paysages du massif des Vosges.<br />
+                    Au programme : obstacles et divertissement avec un moniteur
+                    qualifié.
+                </span>
+
+                <aside>
+                    <ul>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton5_txt1"
+                                onclick="toggle_text5(event)"
+                            >
+                                Excursion Buggy - 175€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton5_txt2"
+                                onclick="toggle_text5(event)"
+                            >
+                                Excursion a Cheval - 125€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton5_txt3"
+                                onclick="toggle_text5(event)"
+                            >
+                                Excursion Velo - 55€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton5_txt4"
+                                onclick="toggle_text5(event)"
+                            >
+                                Excursion Quad - 95€
+                            </button>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section6act height">
+            <h4>Détente</h4>
+            <div class="sectionflex">
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos6_txt1"
+                    class="videos6"
+                    style="display: none"
+                >
+                    <source src="videos/Bali.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos6_txt2"
+                    class="videos6"
+                    style="display: none"
+                >
+                    <source src="videos/Suisse.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos6_txt3"
+                    class="videos6"
+                    style="display: none"
+                >
+                    <source src="videos/Irelande.mp4" type="video/mp4" />
+                </video>
+
+                <video
+                    autoplay
+                    loop
+                    muted
+                    id="videos6_txt4"
+                    class="videos6"
+                    style="display: none"
+                >
+                    <source src="videos/Dubai.mp4" type="video/mp4" />
+                </video>
+
+                <span id="span6_txt1" class="détente" style="display: none"
+                    >Au sein du complexe hôtelier COMO Shambhala Estate, le spa
+                    se situe dans un environnement verdoyant, au bord du fleuve
+                    Ayung.<br /><br />
+                    On y pratique le massage ayurvédique, une technique
+                    traditionnelle unique, pratiquée par les Indiens depuis des
+                    millénaires.</span
+                >
+
+                <span id="span6_txt2" class="détente" style="display: none"
+                    >Le spa est situé dans la commune de Bad Ragaz, connue pour
+                    les vertus de son eau thermale.<br /><br />
+                    Les eaux de sept sources venues de la gorge Tamina s'y
+                    mélangent.</span
+                >
+                <span id="span6_txt3" class="détente" style="display: none"
+                    >Profitez des eaux du Lagon Bleu, un lac au milieu d’un
+                    paysage volcanique.<br /><br />
+                    Son eau est puisée à plus de deux mille mètres sous
+                    terre.<br />
+                    Elle arrive dans le Lagon Bleu avec une couleur turquoise et
+                    une température entre 30° et 39°.</span
+                >
+                <span id="span6_txt4" class="détente" style="display: none"
+                    >Situé sur Palm Island, le spa One&Only se revendique être
+                    un sanctuaire de calme et de sérénité absolue.<br /><br />
+                    Relaxation, régénération et raffermissement sont au cœur des
+                    soins.</span
+                >
+
+                <aside>
+                    <ul>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton6_txt1"
+                                onclick="toggle_text6(event)"
+                            >
+                                Spa Shambhala Estate (Bali) - 100€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton6_txt2"
+                                onclick="toggle_text6(event)"
+                            >
+                                Wellbeing & Thermal Spa (Suisse) - 220€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton6_txt3"
+                                onclick="toggle_text6(event)"
+                            >
+                                Spa du Blue Lagoon Clinic Hotel (Islande) - 150€
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                type="button"
+                                id="testbutton6_txt4"
+                                onclick="toggle_text6(event)"
+                            >
+                                Spa One&Only (Dubaï) - 650€
+                            </button>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <footer id="foot">
+            <div class="Presentation">
+                <div class="logo">
+                    <img src="images/logoblanc.png" alt="Logo Enolo" />
+                </div>
+                <h3>Vos vacances simplifiées</h3>
+            </div>
+
+            <div class="Newsletter">
+                <h5>Abonnez vous à nos actualités</h5>
+                <label for="newsletter">Votre email:</label>
+                <input type="mail" name="newsletter" />
+            </div>
+
+            <div class="AssistFollow">
+                <div class="Assist">
+                    <h5>Assistance</h5>
+                    <a href="#">FAQ</a>
+                    <a href="#">Nous contacter</a>
+                    <a href="#">Service client</a>
+                </div>
+
+                <div class="Follow">
+                    <h5>Follow US</h5>
+
+                    <a href="#">
+                        <img src="images/facebook.png" alt="Logo Facebook" />
+                    </a>
+
+                    <a href="#">
+                        <img src="images/instagram.png" alt="Logo Instagram" />
+                    </a>
+
+                    <a href="#">
+                        <img src="images/twitter.png" alt="Logo Twitter" />
+                    </a>
+                </div>
+            </div>
+            <p>Tous droits réservés @Enolo - 2022</p>
+        </footer>
+    </body>
+</html>

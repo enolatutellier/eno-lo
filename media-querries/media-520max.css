@@ -1,0 +1,137 @@
+.section1 p {
+    padding: 26px 14px;
+    font-size: 0.55em;
+}
+
+.section1 {
+    padding: 100px 0;
+}
+
+.AssistFollow {
+    flex-direction: column;
+    align-items: center;
+}
+
+.Follow {
+    margin-left: unset;
+}
+
+.Assist {
+    text-align: center;
+}
+
+.pic1 {
+    transform: unset !important;
+}
+
+.hostels {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "title"
+        "img5"
+        "img6"
+        "img2"
+        "img3"
+        "img1"
+        "img4";
+    grid-gap: 15px;
+    padding: 50px 0;
+}
+
+.card {
+    border-radius: 0;
+    height: 300px;
+}
+
+figcaption > div {
+    position: initial;
+}
+
+.greystar {
+    color: silver;
+}
+
+.formulaire form {
+    border-radius: unset;
+    grid-template-columns: 1fr;
+    grid-template-areas: "h3" "div1" "div2" "div3" "div4" "div5" "div6";
+    padding: 0;
+}
+
+.formulaire {
+    padding: 0;
+}
+
+.formulaire h3 {
+    margin-bottom: unset;
+    margin-top: 50px;
+    position: relative;
+}
+
+.formulaire h3::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    bottom: 66px;
+    left: 0;
+}
+
+.div6 {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.div6::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 70px;
+    left: 0;
+}
+
+.formulaire input {
+    width: 100% !important;
+}
+
+footer .logo {
+    width: 100% !important;
+}
+
+.height {
+    height: 150px;
+}
+
+.height:hover {
+    height: 150px;
+}
+
+.height:hover h4 {
+    box-shadow: none;
+}
+
+.section3act:hover h4 {
+    color: white;
+}
+
+.sectionflex {
+    display: none !important;
+}
+
+section:hover h4 {
+    right: unset;
+    top: 45%;
+    left: 35%;
+}
+
+section h4 {
+    left: 35%;
+}
+
+section h5::after {
+    margin-top: 85px;
+}

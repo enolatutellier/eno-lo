@@ -1,0 +1,69 @@
+header{
+    height: 570px;
+}
+
+header h1{
+    font-size: 2em;
+}
+
+header a{
+    font-size: 0.7em;
+}
+
+#search{
+    display: none;
+}
+
+.section1{
+    padding: 100px 30px;
+}
+
+footer{
+    flex-direction: column;
+}
+
+form{
+    display: block;
+}
+
+.sectionflex, li button{
+    font-size: 0.8em;
+}
+
+.sectionflex span{
+    padding: 15px;
+}
+
+section h4{
+    font-size: 1.5em;
+    width: initial !important;
+}
+
+.section1act:hover,
+.section2act:hover,
+.section3act:hover,
+.section4act:hover,
+.section5act:hover,
+.section6act:hover{
+    height: 600px;
+}
+
+video{
+    display: none !important;
+}
+
+.card figcaption{
+    font-size: 0.7em;
+}
+
+figcaption h6::first-letter{
+    font-size: 2rem !important;
+}
+
+figcaption div i{
+    font-size: 1em;
+}
+
+.hostels{
+    padding: 40px 30px;
+}
